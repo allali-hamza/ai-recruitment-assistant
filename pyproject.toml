@@ -1,0 +1,27 @@
+[project]
+name = "ai-recruitment-assistant"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "allali-hamza", email = "hamzaallali7002@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "langchain>=1.5.0",
+    "langchain-core>=1.8.1",
+    "langgraph>=1.2.22",
+    "pydantic>=2.14.3",
+]
+
+[project.scripts]
+ai-recruitment-assistant = "ai_recruitment_assistant:main"
+
+[build-system]
+requires = ["uv_build>=0.13.4,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
